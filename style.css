@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    width: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: black;
+}
+.b{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 30vw;
+    height: 60vh;
+    border: 5px solid #000000;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.text{
+    width: 80%;
+    height: 10%;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pw{
+    width: 80%;
+    height: 10%;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5%;
+    border: 1px solid black;
+}
+.pw input{
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    border:0;
+    outline: 0;
+    color: #555;padding: 10px 0px;
+}
+#eyeicon{
+    max-width: 20%;
+    max-height: 70%;
+    cursor: pointer;
+}

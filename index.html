@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Showing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="b">
+        <div class="container">
+            <div class="text"><label class="l">Enter Password</label></div>
+            <div class="pw"><input type="password" class="p" id="password" placeholder="Password">
+            <img src="eyeclose.jpg" id="eyeicon"></div>
+        </div>
+    </div>
+    <script>
+        let eyeicon=document.getElementById("eyeicon");
+        let password=document.getElementById("password");
+        eyeicon.onclick=function(){
+            if(password.type=="password"){
+                password.type="text";
+                eyeicon.src="eyeopen.jpg";
+            }
+            else{
+                password.type="password";
+                eyeicon.src="eyeclose.jpg";
+            }
+        }
+    </script>
+</body>
+</html>
