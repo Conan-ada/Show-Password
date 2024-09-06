@@ -15,8 +15,9 @@ body{
     align-items: center;
 }
 .container{
-    width: 30vw;
-    height: 60vh;
+    width: 80%; /* Changed to a relative width */
+    max-width: 600px; /* Added a max-width for larger screens */
+    height: 70%; /* Changed height to auto for better flexibility */
     border: 5px solid #000000;
     border-radius: 40px;
     display: flex;
@@ -24,10 +25,13 @@ body{
     justify-content: center;
     align-items: center;
     background-color: white;
+    padding: 20px; /* Added padding for better spacing */
 }
 .text{
-    width: 80%;
-    height: 10%;
+    width: 100%; /* Changed to full width relative to container */
+    height: 10%; /* Changed height to auto */
+    /* width: 80%;
+    height: 10%; */
     background-color: black;
     color: white;
     border-radius: 40px;
@@ -37,14 +41,17 @@ body{
     justify-content: center;
 }
 .pw{
-    width: 80%;
-    height: 10%;
+    width: 100%; /* Changed to full width relative to container */
+    height: 10%; /* Changed height to auto */
+    /* width: 80%;
+    height: 10%; */
+    justify-content: space-around; /* Changed from space-around to space-between */
     border-radius: 40px;
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 5%;
+    margin: 5% 0;
     border: 1px solid black;
 }
 .pw input{
@@ -53,9 +60,33 @@ body{
     border:0;
     outline: 0;
     color: #555;padding: 10px 0px;
+    width: calc(100% - 40px); /* Adjusted width to fit within pw */
 }
 #eyeicon{
     max-width: 20%;
     max-height: 70%;
     cursor: pointer;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .text {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .pw {
+        flex-direction: row; /* Stack elements vertically on smaller screens */
+        width: 100%;
+    }
+
+    .pw input {
+        width: 100%; /* Adjust width to fit within pw on smaller screens */
+    }
+
+    #eyeicon {
+        max-width: 30%; /* Adjust eye icon size for smaller screens */
+    }
 }
