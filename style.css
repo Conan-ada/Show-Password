@@ -45,7 +45,6 @@ body{
     height: 10%; /* Changed height to auto */
     /* width: 80%;
     height: 10%; */
-    justify-content: space-around; /* Changed from space-around to space-between */
     border-radius: 40px;
     background-color: white;
     display: flex;
@@ -71,6 +70,8 @@ body{
     .container {
         width: 90%;
         max-width: 400px;
+        height: 60%;
+        max-height: 400px;
     }
 
     .text {
