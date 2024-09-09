@@ -17,7 +17,7 @@ body{
 .container{
     width: 80%; /* Changed to a relative width */
     max-width: 600px; /* Added a max-width for larger screens */
-    height: 70%; /* Changed height to auto for better flexibility */
+    height: 60%; /* Changed height to auto for better flexibility */
     border: 5px solid #000000;
     border-radius: 40px;
     display: flex;
@@ -71,7 +71,8 @@ body{
         width: 90%;
         max-width: 400px;
         height: 60%;
-        max-height: 400px;
+        max-height: 200px;
+        margin: 40px;
     }
 
     .text {
